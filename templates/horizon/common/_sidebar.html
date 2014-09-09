@@ -1,6 +1,13 @@
 {% load branding horizon i18n %}
 {% load url from future %}
 
+<style>
+  h1.brand a {
+    background: url(/static/dashboard/img/{{ reseller_logo }}) top left no-repeat;
+  }
+</style>
+
 <div class='sidebar'>
+  <h1 class="brand"><a href="{% site_branding_link %}">{% site_branding %}</a></h1>
   {% horizon_nav %}
 </div>
