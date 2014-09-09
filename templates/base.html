@@ -1,6 +1,11 @@
 {% load branding i18n %}
 <!DOCTYPE html>
 <html>
+  <style>
+    #splash .login {
+      background: #ffffff url(/static/dashboard/img/{{ reseller_splash }}) no-repeat center 35px;
+    }
+  </style>
   <head>
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
     {% include "horizon/_custom_meta.html" %}

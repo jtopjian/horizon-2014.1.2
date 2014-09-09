@@ -2,7 +2,15 @@
 {% load i18n %}
 {% load url from future %}
 
-{% block modal-header %}{% trans "Log In" %}{% endblock %}
+{% block modal-header %}
+{% if reseller_splash != 'logo.png' %}
+<div>
+    <img src="/static/dashboard/img/poweredbydair-small.png" class="pull-right clearfix">
+<br><br>
+</div>
+{% endif %}
+{% trans "Log In" %}
+{% endblock %}
 {% block modal_class %}login {% if hide %}modal hide{% endif %}{% endblock %}
 
 {% block form_action %}{% url 'login' %}{% endblock %}
