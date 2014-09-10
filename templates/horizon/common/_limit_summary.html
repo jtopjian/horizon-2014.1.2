@@ -55,7 +55,7 @@
     {% comment %} jt {% endcomment %}
     <div class="d3_quota_bar">
       <div class="d3_pie_chart_usage" data-used="{% widthratio usage.limits.images.used usage.limits.images.quota 100 %}"></div>
-      <strong>{% trans "Images" %} <br />
+      <strong>{% trans "Images / Snapshots" %} <br />
         {% blocktrans with used=usage.limits.images.used|intcomma available=usage.limits.images.quota|quotainf|intcomma %}Used <span> {{ used }} </span> of <span> {{ available }} </span>{% endblocktrans %}
       </strong>
     </div>
