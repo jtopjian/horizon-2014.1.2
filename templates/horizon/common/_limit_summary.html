@@ -60,6 +60,14 @@
       </strong>
     </div>
 
+    <div class="d3_quota_bar">
+      <div class="d3_pie_chart_usage" data-used="{% widthratio usage.limits.object_mb.used usage.limits.object_mb.quota 100 %}"></div>
+      <strong>{% trans "Object Storage" %} <br />
+        {% blocktrans with used=usage.limits.object_mb.used|intcomma available=usage.limits.object_mb.quota|quotainf|intcomma %}Used <span> {{ used }} </span> of <span> {{ available }} </span>{% endblocktrans %}
+      </strong>
+    </div>
+
+
 </div>
 
 <br><br>
