@@ -885,6 +885,7 @@ class DataTableOptions(object):
         self.row_class = getattr(options, 'row_class', Row)
         self.column_class = getattr(options, 'column_class', Column)
         self.pagination_param = getattr(options, 'pagination_param', 'marker')
+        self.prev_pagination_param = getattr(options, 'pagination_param', 'marker')
         self.browser_table = getattr(options, 'browser_table', None)
         self.footer = getattr(options, 'footer', True)
         self.no_data_message = getattr(options,

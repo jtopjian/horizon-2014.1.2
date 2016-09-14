@@ -562,17 +562,23 @@ class BatchAction(Action):
     def __init__(self, **kwargs):
         super(BatchAction, self).__init__(**kwargs)
         self.success_url = kwargs.get('success_url', None)
+        self.data_type_singular = ""
+        self.data_type_plural = ""
         self.data_type_singular = kwargs.get('data_type_singular', None)
-        self.data_type_plural = kwargs.get('data_type_plural',
-            self.data_type_singular + 's')
+        if self.data_type_singular != None:
+            self.data_type_plural = kwargs.get('data_type_plural',
+                self.data_type_singular + 's')
         # If setting a default name, don't initialize it too early
         self.verbose_name = kwargs.get('verbose_name', self._get_action_name)
         self.verbose_name_plural = kwargs.get('verbose_name_plural',
             lambda: self._get_action_name('plural'))
 
         if not kwargs.get('data_type_singular', None):
-            raise NotImplementedError('A batchAction object must have a '
-                                      'data_type_singular attribute.')
+            LOG.error("Missing data_type_singular: %s", self.name)
+            self.data_type_singular = self.name
+            #LOG.error(self.name)
+            #raise NotImplementedError('A batchAction object must have a '
+            #                          'data_type_singular attribute.')
 
         self.current_present_action = 0
         self.current_past_action = 0
