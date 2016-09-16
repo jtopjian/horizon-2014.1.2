@@ -563,6 +563,8 @@ class BatchAction(Action):
         super(BatchAction, self).__init__(**kwargs)
         self.success_url = kwargs.get('success_url', None)
         self.data_type_singular = kwargs.get('data_type_singular', None)
+        if self.data_type_singular == None:
+            self.data_type_singular = self.name
         self.data_type_plural = kwargs.get('data_type_plural',
             self.data_type_singular + 's')
         # If setting a default name, don't initialize it too early
@@ -570,9 +572,9 @@ class BatchAction(Action):
         self.verbose_name_plural = kwargs.get('verbose_name_plural',
             lambda: self._get_action_name('plural'))
 
-        if not kwargs.get('data_type_singular', None):
-            raise NotImplementedError('A batchAction object must have a '
-                                      'data_type_singular attribute.')
+        #if not kwargs.get('data_type_singular', None):
+        #    raise NotImplementedError('A batchAction object must have a '
+        #                              'data_type_singular attribute.')
 
         self.current_present_action = 0
         self.current_past_action = 0
@@ -596,7 +598,16 @@ class BatchAction(Action):
             action = action_attr
         else:
             toggle_selection = getattr(self, "current_%s_action" % action_type)
-            action = action_attr[toggle_selection]
+            try:
+                action = action_attr[toggle_selection]
+                LOG.error("foo")
+            except:
+                if items is None:
+                    count = 1
+                else:
+                    count = len(items)
+                x = action_attr(count)
+                action = x[toggle_selection]
         if items is None or len(items) == 1:
             data_type = self.data_type_singular
         else:
