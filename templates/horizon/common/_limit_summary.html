@@ -72,10 +72,13 @@
 
 <br><br>
 <strong>DAIR Use Agreement expires {{ usage.limits.expiration }}</strong>
-{{ usage.quota.dair_notice.dair_notice|safe }}
+{% if usage.limits.dair_notice %}
+<br><br>
+<strong>DAIR Notice: </strong>
 {% autoescape off %}
-<font color="#99000">{{ usage.quotas.dair_notice.dair_notice }}</font>
+{{ usage.limits.dair_notice }}
 {% endautoescape %}
+{% endif %}
 <br><br>
 <hr>
 
