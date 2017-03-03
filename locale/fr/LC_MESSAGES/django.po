@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Horizon\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-03 12:23-0700\n"
+"POT-Creation-Date: 2017-03-03 12:43-0700\n"
 "PO-Revision-Date: 2014-07-21 18:43+0000\n"
 "Last-Translator: François Bureau <francois.bureau@cloudwatt.com>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/horizon/language/"
@@ -269,7 +269,7 @@ msgid "DAIR weekly maintenance is every Tuesday "
 msgstr "La maintenance de routine de l’ATIR a lieu chaque mardi, "
 
 #: templates/horizon/common/_limit_summary.html:76
-msgid "18:00-20:00pm EST."
+msgid "18:00-20:00 EST."
 msgstr "de 18 h à 20 h (HE)."
 
 #: templates/horizon/common/_resource_browser.html:10
