@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Horizon\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-03 10:55-0700\n"
+"POT-Creation-Date: 2017-03-03 12:23-0700\n"
 "PO-Revision-Date: 2014-04-07 03:40+0000\n"
 "Last-Translator: Tom Fifield <tom@openstack.org>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/projects/p/"
@@ -268,7 +268,7 @@ msgid "DAIR weekly maintenance is every Tuesday "
 msgstr ""
 
 #: templates/horizon/common/_limit_summary.html:76
-msgid "6-9pm EST."
+msgid "18:00-20:00pm EST."
 msgstr ""
 
 #: templates/horizon/common/_resource_browser.html:10
