@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-31 01:24-0500\n"
+"POT-Creation-Date: 2017-03-03 10:55-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -146,25 +146,25 @@ msgstr ""
 msgid "Sign Out"
 msgstr ""
 
-#: templates/splash.html:8 templates/auth/login.html:4
+#: templates/splash.html:13 templates/auth/login.html:4
 msgid "Login"
 msgstr ""
 
-#: templates/auth/_login.html:5
+#: templates/auth/_login.html:6
 msgid "Log In"
 msgstr ""
 
-#: templates/auth/_login.html:15
+#: templates/auth/_login.html:17
 msgid "You do not have permission to access the resource:"
 msgstr ""
 
-#: templates/auth/_login.html:17
+#: templates/auth/_login.html:19
 #, python-format
 msgid ""
 "Login as different user or go back to <a href=\"%(home_url)s\"> home page</a>"
 msgstr ""
 
-#: templates/auth/_login.html:32
+#: templates/auth/_login.html:34
 msgid "Sign In"
 msgstr ""
 
@@ -218,6 +218,8 @@ msgstr ""
 #: templates/horizon/common/_limit_summary.html:36
 #: templates/horizon/common/_limit_summary.html:43
 #: templates/horizon/common/_limit_summary.html:50
+#: templates/horizon/common/_limit_summary.html:60
+#: templates/horizon/common/_limit_summary.html:67
 #, python-format
 msgid "Used <span> %(used)s </span> of <span> %(available)s </span>"
 msgstr ""
@@ -244,6 +246,22 @@ msgstr ""
 
 #: templates/horizon/common/_limit_summary.html:49
 msgid "Volume Storage"
+msgstr ""
+
+#: templates/horizon/common/_limit_summary.html:59
+msgid "Images / Snapshots"
+msgstr ""
+
+#: templates/horizon/common/_limit_summary.html:66
+msgid "Object Storage"
+msgstr ""
+
+#: templates/horizon/common/_limit_summary.html:75
+msgid "DAIR weekly maintenance is every Tuesday "
+msgstr ""
+
+#: templates/horizon/common/_limit_summary.html:76
+msgid "6-9pm EST."
 msgstr ""
 
 #: templates/horizon/common/_resource_browser.html:10

@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # FBteam <info@fairbanks.nl>, 2014
 # toMeloos <tom@server.biz>, 2014
@@ -9,14 +9,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Horizon\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-04 11:03-0500\n"
+"POT-Creation-Date: 2017-03-03 10:55-0700\n"
 "PO-Revision-Date: 2014-04-02 12:30+0000\n"
 "Last-Translator: toMeloos <tom@server.biz>\n"
-"Language-Team: Dutch (Netherlands) (http://www.transifex.com/projects/p/openstack/language/nl_NL/)\n"
+"Language-Team: Dutch (Netherlands) (http://www.transifex.com/projects/p/"
+"openstack/language/nl_NL/)\n"
+"Language: nl_NL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: nl_NL\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: base.py:431
@@ -78,7 +79,7 @@ msgctxt "present"
 msgid "%(action)s %(data_type)s"
 msgstr "%(action)s %(data_type)s"
 
-#: tables/actions.py:641 tables/base.py:1408
+#: tables/actions.py:641 tables/base.py:1410
 msgid "N/A"
 msgstr "n.v.t."
 
@@ -118,20 +119,20 @@ msgstr "Bijgewerkt"
 msgid "The attribute %(attr)s doesn't exist on %(obj)s."
 msgstr "Het attribuut %(attr)s bestaat niet op %(obj)s."
 
-#: tables/base.py:890
+#: tables/base.py:892
 msgid "No items to display."
 msgstr "Geen artikelen om weer te geven."
 
-#: tables/base.py:996
+#: tables/base.py:998
 msgid "Actions"
 msgstr "Acties"
 
-#: tables/base.py:1202
+#: tables/base.py:1204
 #, python-format
 msgid "No match returned for the id \"%s\"."
 msgstr "Geen overeenkomsten gevonden voor de id \"%s\"."
 
-#: tables/base.py:1328
+#: tables/base.py:1330
 msgid "Please select a row before taking that action."
 msgstr "Selecteer alstublieft een rij voor het uitvoeren van die actie."
 
@@ -148,26 +149,27 @@ msgstr "Help"
 msgid "Sign Out"
 msgstr "Afmelden"
 
-#: templates/splash.html:8 templates/auth/login.html:4
+#: templates/splash.html:13 templates/auth/login.html:4
 msgid "Login"
 msgstr "Aanmelden"
 
-#: templates/auth/_login.html:5
+#: templates/auth/_login.html:6
 msgid "Log In"
 msgstr "Aanmelden"
 
-#: templates/auth/_login.html:15
+#: templates/auth/_login.html:17
 msgid "You do not have permission to access the resource:"
 msgstr "U ben niet gemachtigd voor toegang tot de bron:"
 
-#: templates/auth/_login.html:17
+#: templates/auth/_login.html:19
 #, python-format
 msgid ""
-"Login as different user or go back to <a href=\"%(home_url)s\"> home "
-"page</a>"
-msgstr "Meldt u zich aan als een andere gebruiker of ga terug naar <a href=\"%(home_url)s\">thuis</a>"
+"Login as different user or go back to <a href=\"%(home_url)s\"> home page</a>"
+msgstr ""
+"Meldt u zich aan als een andere gebruiker of ga terug naar <a href="
+"\"%(home_url)s\">thuis</a>"
 
-#: templates/auth/_login.html:32
+#: templates/auth/_login.html:34
 msgid "Sign In"
 msgstr "Aanmelden"
 
@@ -221,6 +223,8 @@ msgstr "Exemplaren"
 #: templates/horizon/common/_limit_summary.html:36
 #: templates/horizon/common/_limit_summary.html:43
 #: templates/horizon/common/_limit_summary.html:50
+#: templates/horizon/common/_limit_summary.html:60
+#: templates/horizon/common/_limit_summary.html:67
 #, python-format
 msgid "Used <span> %(used)s </span> of <span> %(available)s </span>"
 msgstr "Gebruikt <span> %(used)s </span> van <span> %(available)s </span>"
@@ -248,6 +252,23 @@ msgstr "Volumen"
 #: templates/horizon/common/_limit_summary.html:49
 msgid "Volume Storage"
 msgstr "Volumeopslag"
+
+#: templates/horizon/common/_limit_summary.html:59
+msgid "Images / Snapshots"
+msgstr ""
+
+#: templates/horizon/common/_limit_summary.html:66
+#, fuzzy
+msgid "Object Storage"
+msgstr "Volumeopslag"
+
+#: templates/horizon/common/_limit_summary.html:75
+msgid "DAIR weekly maintenance is every Tuesday "
+msgstr ""
+
+#: templates/horizon/common/_limit_summary.html:76
+msgid "6-9pm EST."
+msgstr ""
 
 #: templates/horizon/common/_resource_browser.html:10
 #, python-format

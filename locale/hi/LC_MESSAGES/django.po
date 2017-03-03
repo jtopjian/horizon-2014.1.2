@@ -1,21 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # , 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: Horizon\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-04 11:03-0500\n"
+"POT-Creation-Date: 2017-03-03 10:55-0700\n"
 "PO-Revision-Date: 2014-04-06 10:40+0000\n"
 "Last-Translator: Chandan kumar <chandankumar.093047@gmail.com>\n"
-"Language-Team: Hindi (http://www.transifex.com/projects/p/openstack/language/hi/)\n"
+"Language-Team: Hindi (http://www.transifex.com/projects/p/openstack/language/"
+"hi/)\n"
+"Language: hi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: hi\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: base.py:431
@@ -77,7 +78,7 @@ msgctxt "present"
 msgid "%(action)s %(data_type)s"
 msgstr "%(action)s %(data_type)s"
 
-#: tables/actions.py:641 tables/base.py:1408
+#: tables/actions.py:641 tables/base.py:1410
 msgid "N/A"
 msgstr "लागू नहीं"
 
@@ -117,20 +118,20 @@ msgstr "अद्यतित"
 msgid "The attribute %(attr)s doesn't exist on %(obj)s."
 msgstr "%(obj)s पर %(attr)s  गुण मौज़ूद नहीं हैं."
 
-#: tables/base.py:890
+#: tables/base.py:892
 msgid "No items to display."
 msgstr "दिखाने के लिए कोई सामग्रियों नहीं."
 
-#: tables/base.py:996
+#: tables/base.py:998
 msgid "Actions"
 msgstr "क्रियाएं"
 
-#: tables/base.py:1202
+#: tables/base.py:1204
 #, python-format
 msgid "No match returned for the id \"%s\"."
 msgstr "इस आइडी \"%s\" के लिए कोई मेल नहीं मिला."
 
-#: tables/base.py:1328
+#: tables/base.py:1330
 msgid "Please select a row before taking that action."
 msgstr "कृपया इस क्रिया को करने से पहले पंक्ति का चयन करें."
 
@@ -147,26 +148,27 @@ msgstr "मदद"
 msgid "Sign Out"
 msgstr "साइन आउट"
 
-#: templates/splash.html:8 templates/auth/login.html:4
+#: templates/splash.html:13 templates/auth/login.html:4
 msgid "Login"
 msgstr "लॉगिन"
 
-#: templates/auth/_login.html:5
+#: templates/auth/_login.html:6
 msgid "Log In"
 msgstr "लॉगिन"
 
-#: templates/auth/_login.html:15
+#: templates/auth/_login.html:17
 msgid "You do not have permission to access the resource:"
 msgstr "संसाधन पर पहुँच के लिए आपको अनुमति नहीं है:"
 
-#: templates/auth/_login.html:17
+#: templates/auth/_login.html:19
 #, python-format
 msgid ""
-"Login as different user or go back to <a href=\"%(home_url)s\"> home "
-"page</a>"
-msgstr "दूसरे उपयोगकर्ता के रूप में लॉगिन हों या  <a href=\"%(home_url)s\"> मुखपृष्ठ पर वापस जायें </a>"
+"Login as different user or go back to <a href=\"%(home_url)s\"> home page</a>"
+msgstr ""
+"दूसरे उपयोगकर्ता के रूप में लॉगिन हों या  <a href=\"%(home_url)s\"> मुखपृष्ठ पर वापस "
+"जायें </a>"
 
-#: templates/auth/_login.html:32
+#: templates/auth/_login.html:34
 msgid "Sign In"
 msgstr "साइन इन"
 
@@ -220,6 +222,8 @@ msgstr "इंस्टेंस"
 #: templates/horizon/common/_limit_summary.html:36
 #: templates/horizon/common/_limit_summary.html:43
 #: templates/horizon/common/_limit_summary.html:50
+#: templates/horizon/common/_limit_summary.html:60
+#: templates/horizon/common/_limit_summary.html:67
 #, python-format
 msgid "Used <span> %(used)s </span> of <span> %(available)s </span>"
 msgstr "<span> %(available)s </span> का <span> %(used)s </span> उपलब्ध."
@@ -247,6 +251,23 @@ msgstr "वॉल्यूम"
 #: templates/horizon/common/_limit_summary.html:49
 msgid "Volume Storage"
 msgstr "खंड भंडारण"
+
+#: templates/horizon/common/_limit_summary.html:59
+msgid "Images / Snapshots"
+msgstr ""
+
+#: templates/horizon/common/_limit_summary.html:66
+#, fuzzy
+msgid "Object Storage"
+msgstr "खंड भंडारण"
+
+#: templates/horizon/common/_limit_summary.html:75
+msgid "DAIR weekly maintenance is every Tuesday "
+msgstr ""
+
+#: templates/horizon/common/_limit_summary.html:76
+msgid "6-9pm EST."
+msgstr ""
 
 #: templates/horizon/common/_resource_browser.html:10
 #, python-format
