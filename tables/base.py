@@ -1274,7 +1274,7 @@ class DataTable(object):
         bound_actions = self.get_row_actions(datum)
         extra_context = {"row_actions": bound_actions,
                          "row_id": self.get_object_id(datum)}
-        context = template.RequestContext(self.request, extra_context)
+        context = template.Context(extra_context)
         return row_actions_template.render(context)
 
     @staticmethod
