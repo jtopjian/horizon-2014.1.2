@@ -3,6 +3,9 @@
 {% load url from future %}
 
 {% block modal-header %}
+{% if dair_admin_notice %}
+<p class="alert-dair">{{ dair_admin_notice }}</p>
+{% endif %}
 {% trans "Log In" %}
 {% endblock %}
 {% block modal_class %}login {% if hide %}modal hide{% endif %}{% endblock %}
